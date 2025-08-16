@@ -111,7 +111,7 @@ The repository includes three Google Colab notebooks:
 
 3. **Semantic Segmentation**: Detects walls and floors while preserving high-confidence predictions from previous stages.
 
-4. **Fine-grained Segmentation (ScanNet 200)**: Adds detailed object classification for smaller items without overwriting large object predictions.
+4. **Small object Instance Segmentation (ScanNet 200)**: Adds detailed object classification for smaller items without overwriting large object predictions.
 
 5. **Export**: Compiles results and exports PLY files that retain the original spherical harmonics, scale, and point count with segmentation attributes for use in 3D software such as Houdini.
 
