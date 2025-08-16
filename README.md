@@ -178,10 +178,14 @@ Note: ScanNet access requires agreeing to non-commercial research terms.
 - **Kitchen Classification**: [View Video](https://storage.googleapis.com/anmstorage/MasterProject/demo/kitchen_classification.mp4)
 - **Living Room Classification**: [View Video](https://storage.googleapis.com/anmstorage/MasterProject/demo/living_room_classification.mp4)
 
+## Input Files
+
 ### Sample PLY Files (Unclassified)
-Test these raw Gaussian splat files with the pipeline:
+Raw Gaussian splat files to test with the inference pipeline:
 - [Full Kitchen/Diner Scene](https://storage.googleapis.com/anmstorage/MasterProject/PLY_Files/KitchenDiner_cleaned_v014_rotation.ply)
 - [Kitchen Only](https://storage.googleapis.com/anmstorage/MasterProject/PLY_Files/KitchenDiner_cleaned_v010_rotation_just_kitchen.ply)
+
+Use these files with `Inference_pipeline.ipynb` to test the segmentation pipeline.
 
 ## Applications
 
