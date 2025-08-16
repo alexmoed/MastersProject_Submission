@@ -111,19 +111,30 @@ The repository includes three Google Colab notebooks:
 
 3. **Semantic Segmentation**: Detects walls and floors while preserving high-confidence predictions from previous stages.
 
-4. **Small object Instance Segmentation (ScanNet 200)**: Adds detailed object classification for smaller items without overwriting large object predictions.
+4. **Fine-grained Segmentation (ScanNet 200)**: Adds detailed object classification for smaller items without overwriting large object predictions.
 
 5. **Export**: Compiles results and exports PLY files that retain the original spherical harmonics, scale, and point count with segmentation attributes for use in 3D software such as Houdini.
 
 ### Output Format
 
-Final PLY files include four attributes per point:
-- `ScanNet20_class`: Large object classification
-- `ScanNet20_instance`: Instance ID for ScanNet 20 objects
-- `ScanNet200_class`: Fine-grained object classification
-- `ScanNet200_instance`: Instance ID for ScanNet 200 objects
+Final PLY files include four new attributes per point, but each point receives classification from only ONE model:
 
-Value of -1 indicates no classification for that category.
+**If classified by ScanNet 20** (large objects/walls/floors):
+- `ScanNet20_class`: Object class ID
+- `ScanNet20_instance`: Instance ID  
+- `ScanNet200_class`: -1
+- `ScanNet200_instance`: -1
+
+**If classified by ScanNet 200** (small objects):
+- `ScanNet20_class`: -1
+- `ScanNet20_instance`: -1
+- `ScanNet200_class`: Object class ID
+- `ScanNet200_instance`: Instance ID
+
+**If unclassified**:
+- All four attributes set to -1
+
+The pipeline ensures no overlap - each point is classified by either ScanNet 20, ScanNet 200, or remains unclassified.
 
 ## Models & Data
 
