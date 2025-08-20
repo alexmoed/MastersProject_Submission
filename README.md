@@ -1,6 +1,6 @@
 # SegSplat: 3D Gaussian Splat Segmentation Pipeline
 
-A multi-stage segmentation pipeline explicitly designed for 3D Gaussian splats, combining Meta's SONATA pre-trained model with PointGroup instance segmentation decoder. This project bridges the challenging domain gap between RGB-D trained models and real-world Gaussian splat data from photogrammetric reconstruction.
+SegSplat is a  multi-stage segmentation pipeline explicitly designed for 3D Gaussian splats, combining Meta's SONATA pre-trained model with PointGroup instance segmentation decoder. This project bridges the challenging domain gap between RGB-D trained models and real-world Gaussian splat data from photogrammetric reconstruction.
 
 ## Overview
 
