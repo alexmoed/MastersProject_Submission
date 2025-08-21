@@ -1,9 +1,10 @@
+/// @brief Point cloud processing module
+/// Modified from :-
+/// Xiaoyang Wu (2023). Pointcept: A Codebase for Point Cloud Perception Research [online].
+/// [Accessed 2025]. Available from: "https://github.com/Pointcept/Pointcept".
+
 #!/usr/bin/env python3
-"""
-Pointcept build environment setup
-Location: /content/drive/MyDrive/Pointcept/Installs/setup_build_env.py
-Run with: exec(open('/content/drive/MyDrive/Pointcept/Installs/setup_build_env.py').read())
-"""
+
 
 import os
 import subprocess
@@ -354,4 +355,5 @@ gc.collect()
 
 # Step 23: Final test
 from pointgroup_ops import ballquery_batch_p, bfs_cluster
+
 print("Ops loaded:", ballquery_batch_p, bfs_cluster)
