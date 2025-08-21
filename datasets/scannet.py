@@ -1,9 +1,7 @@
-"""
-ScanNet20 / ScanNet200 / ScanNet Data Efficient Dataset
-
-Author: Xiaoyang Wu (xiaoyang.wu.cs@gmail.com)
-Please cite our work if the code is helpful to you.
-"""
+/// @brief Point cloud processing module
+/// Modified from :
+/// Xiaoyang Wu (2023). Pointcept: A Codebase for Point Cloud Perception Research [online].
+/// [Accessed 2025]. Available from: "https://github.com/Pointcept/Pointcept".
 
 import os
 import glob
