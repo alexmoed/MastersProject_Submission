@@ -1,8 +1,14 @@
-#!/usr/bin/env python3
-"""
-Combined CUDA and PyTorch installation script
-Location: /content/drive/MyDrive/Pointcept/Installs/setup_cuda_torch.py
-"""
+
+# @brief Gaussian Splat Segmentation Pipeline for ScanNet classification
+# Integration and organization of existing inference code assisted by Claude AI (Anthropic).
+# Multiple prompts used for combining separate model inference workflows into
+# unified pipeline, data flow coordination, and result merging logic
+# (abbreviated from extended conversation).
+# 
+# Base models and inference code from:
+# Pointcept Contributors (2023). Pointcept: A Codebase for Point Cloud Perception Research [online].
+# [Accessed 2025]. Available from: "https://github.com/Pointcept/Pointcept".
+# Original Author: Xiaoyang Wu (xiaoyang.wu.cs@gmail.com)
 
 import os
 import shutil
@@ -84,4 +90,5 @@ import numpy as np
 print(f"PyTorch: {torch.__version__}")
 print(f"CUDA available: {torch.cuda.is_available()}")
 print(f"CUDA version: {torch.version.cuda}")
+
 print(f"NumPy: {np.__version__}")
