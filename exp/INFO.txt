@@ -1,1 +1,1 @@
-Checkpoints go here
+Outputs and checkpoints get written here
