@@ -1,9 +1,8 @@
-"""
-Main Training Script
+/// @brief Point cloud processing module
+/// Modified from :-
+/// Xiaoyang Wu (2023). Pointcept: A Codebase for Point Cloud Perception Research [online].
+/// [Accessed 2025]. Available from: "https://github.com/Pointcept/Pointcept".
 
-Author: Xiaoyang Wu (xiaoyang.wu.cs@gmail.com)
-Please cite our work if the code is helpful to you.
-"""
 
 from pointcept.engines.defaults import (
     default_argument_parser,
