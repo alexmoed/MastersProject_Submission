@@ -1,3 +1,8 @@
+/// @brief Point cloud processing module
+/// Modified from :
+/// Xiaoyang Wu (2023). Pointcept: A Codebase for Point Cloud Perception Research [online].
+/// [Accessed 2025]. Available from: "https://github.com/Pointcept/Pointcept".
+
 from functools import partial
 import weakref
 import torch
