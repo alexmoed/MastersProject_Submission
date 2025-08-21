@@ -1,3 +1,8 @@
+# @brief [Brief description of what the code does]
+# Xiaoyang Wu (2023). Pointcept: A Codebase for Point Cloud Perception Research [online].
+# [Accessed 2025]. Available from: "https://github.com/Pointcept/Pointcept".
+# Original Author: Xiaoyang Wu (xiaoyang.wu.cs@gmail.com)
+
 import argparse
 import os, sys
 
