@@ -1,7 +1,5 @@
 # @brief CUDA and PyTorch installation script with caching for Colab environment
 # Installation workflow organization and step sequencing assisted by Claude AI (Anthropic).
-# Multiple prompts used for organizing CUDA cleanup, caching implementation,
-# and installation step coordination (abbreviated from extended conversation).
 
 import os
 import shutil
@@ -85,4 +83,5 @@ print(f"CUDA available: {torch.cuda.is_available()}")
 print(f"CUDA version: {torch.version.cuda}")
 
 print(f"NumPy: {np.__version__}")
+
 
