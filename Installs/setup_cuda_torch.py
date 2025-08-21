@@ -1,14 +1,7 @@
-
-# @brief Gaussian Splat Segmentation Pipeline for ScanNet classification
-# Integration and organization of existing inference code assisted by Claude AI (Anthropic).
-# Multiple prompts used for combining separate model inference workflows into
-# unified pipeline, data flow coordination, and result merging logic
-# (abbreviated from extended conversation).
-# 
-# Base models and inference code from:
-# Pointcept Contributors (2023). Pointcept: A Codebase for Point Cloud Perception Research [online].
-# [Accessed 2025]. Available from: "https://github.com/Pointcept/Pointcept".
-# Original Author: Xiaoyang Wu (xiaoyang.wu.cs@gmail.com)
+# @brief CUDA and PyTorch installation script with caching for Colab environment
+# Installation workflow organization and step sequencing assisted by Claude AI (Anthropic).
+# Multiple prompts used for organizing CUDA cleanup, caching implementation,
+# and installation step coordination (abbreviated from extended conversation).
 
 import os
 import shutil
@@ -92,3 +85,4 @@ print(f"CUDA available: {torch.cuda.is_available()}")
 print(f"CUDA version: {torch.version.cuda}")
 
 print(f"NumPy: {np.__version__}")
+
