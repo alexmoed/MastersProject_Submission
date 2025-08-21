@@ -1,8 +1,9 @@
-/*
-Ball Query with BatchIdx
-Written by Li Jiang
-All Rights Reserved 2020.
-*/
+/// @brief Point cloud processing module
+/// Modified from :-
+///  Li Jiang. Ball Query with BatchIdx & Clustering Algorithm [online] 2020.
+/// [Accessed 2025]. Available from: "https://github.com/Pointcept/Pointcept".
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
