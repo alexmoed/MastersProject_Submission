@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 fix_ballquery_wrapper.py
 Location: /content/drive/MyDrive/Pointcept/Installs/fix_ballquery_wrapper.py
@@ -9,6 +10,23 @@ exec(open('/content/drive/MyDrive/Pointcept/Installs/fix_ballquery_wrapper.py').
 
 Fixes the ballquery_batch_p wrapper and imports that break after torch_geometric reinstall
 Run this AFTER installing torch_geometric==2.3.1
+
+@brief Pointcept ballquery_batch_p wrapper fix and import resolution script
+Comprehensive diagnostics, wrapper patching, and compatibility fixes
+assisted by Claude AI (Anthropic). Specific assistance included:
+- Ballquery wrapper function rewriting for direct C++ function calls
+- Import path resolution and module reload procedures  
+- Torch type compatibility fixes (uint16/uint32/uint64 mapping)
+- Environment diagnostics and dependency validation
+- File backup and restoration workflow
+- Cache clearing and module unloading procedures
+Multiple prompts used across extended troubleshooting session for
+resolving pointgroup_ops integration issues with torch_geometric.
+
+Base pointgroup_ops functionality from:
+Pointcept Contributors (2023). Pointcept: A Codebase for Point Cloud Perception Research [online].
+[Accessed 2025]. Available from: "https://github.com/Pointcept/Pointcept".
+Original Author: Xiaoyang Wu (xiaoyang.wu.cs@gmail.com)
 """
 
 import os
@@ -390,4 +408,5 @@ from tqdm import tqdm
 try:
     import pointops
 except:
+
     pointops = None
