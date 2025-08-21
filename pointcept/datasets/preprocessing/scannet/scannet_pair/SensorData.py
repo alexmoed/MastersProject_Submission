@@ -1,3 +1,19 @@
+#!/usr/bin/env python3
+"""
+setup_build_env.py
+Location: /content/drive/MyDrive/Pointcept/Installs/setup_build_env.py
+
+@brief Pointcept build environment setup and dependency installation script
+Installation workflow organization and step sequencing assisted by Claude AI (Anthropic).
+Multiple prompts used for organizing complex CUDA/PyTorch dependency installation
+procedures (abbreviated from extended conversation).
+
+Base Pointcept framework and build tools from:
+Pointcept Contributors (2023). Pointcept: A Codebase for Point Cloud Perception Research [online].
+[Accessed 2025]. Available from: "https://github.com/Pointcept/Pointcept".
+Original Author: Xiaoyang Wu (xiaoyang.wu.cs@gmail.com)
+"""
+
 import os, struct
 import numpy as np
 import zlib
